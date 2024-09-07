@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niranjan U - AI Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #4ecdc4;
+            --secondary-color: #45b7aa;
+            --background-color: #1a1a1a;
+            --card-background: #2c2c2c;
+            --text-color: #e0e0e0;
+            --text-muted: #b0b0b0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--card-background);
+            color: var(--primary-color);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .section {
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 2rem;
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li::before {
+            content: "▹";
+            color: var(--primary-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Niranjan U</h1>
+            <p>AI Engineer</p>
+            <div class="profile-container">
+                <img src="/api/placeholder/200/200" alt="Niranjan U" class="profile-image">
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="/path/to/niranjan_resume.pdf" download class="download-btn">Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>As an AI Engineer, I specialize in developing and implementing cutting-edge artificial intelligence solutions. With a strong background in machine learning, deep learning, and data science, I strive to create innovative AI-driven applications that solve real-world problems.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Computer Vision</li>
+                <li>Python, TensorFlow, PyTorch</li>
+                <li>Data Analysis and Visualization</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <h3>AI Engineer - Tech Innovators Inc.</h3>
+            <p style="color: var(--text-muted);">2020 - Present</p>
+            <ul>
+                <li>Developed and deployed machine learning models for predictive analytics</li>
+                <li>Implemented natural language processing solutions for chatbot applications</li>
+                <li>Collaborated with cross-functional teams to integrate AI solutions into existing products</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <h3>Master of Science in Artificial Intelligence</h3>
+            <p style="color: var(--text-muted);">University of AI Excellence, 2018 - 2020</p>
+            <h3>Bachelor of Engineering in Computer Science</h3>
+            <p style="color: var(--text-muted);">Tech State University, 2014 - 2018</p>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:niranjan.u@example.com">niranjan.u@example.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/niranjanu" target="_blank">linkedin.com/in/niranjanu</a></p>
+                <p>GitHub: <a href="https://github.com/niranjanu" target="_blank">github.com/niranjanu</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
